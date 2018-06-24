@@ -1,0 +1,55 @@
+
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, minmax(100px, auto));
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+}
+
+.container>div{
+    background:lightblue;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.nest{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.nest-div{
+    border: 1px solid red;
+    padding:8px;
+}
+
+
+
+
+
+
+
+/* Snippet	Purpose
+dg	display: grid
+dig	display: inline-grid
+gtr	grid-template-rows: - - -
+gtc	grid-template-columns: - - -
+gta	grid-template-areas: - - -
+gg	grid-gap: - - -
+grg	grid-row-gap: - - -
+gcp	grid-column-gap: - - -
+grs	grid-row-start: - - -
+gre	grid-row-end: - - -
+gr	grid-row: - - -
+gcs	grid-column-start: - - -
+gce	grid-column-end: - - -
+gc	grid-column: - - -
+ga	grid-area: - - -
+gaf	grid-auto-flow - - -
+gar	grid-auto-rows - - -
+gac	grid-auto-columns - - - */

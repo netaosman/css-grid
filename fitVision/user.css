@@ -1,0 +1,80 @@
+
+/* .wraper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+
+
+.wraper {
+    height: 100%;
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10vh 90vh;
+    grid-gap: 5px;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "sb sb mc mc mc mc mc mc mc mc mc mc";
+}
+
+.wraper>*{
+    /* border: 1px solid black; */
+}
+
+
+.header {
+    grid-area: h;
+    background: #2d9ee0;
+}
+.side-bar {
+    grid-area: sb;
+    background: #4d394b;
+    /* background: #B53471; */
+}
+
+/* Mian content */
+.main-content {
+    grid-area: mc;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15vh 55vh 20vh;
+    /* grid-gap: 5px; */
+    text-align: center;
+    grid-template-areas:
+    "cal wr"
+    "mb mb"
+    "mp mp"
+}
+
+.main-content>*{
+    /* background:lightcoral; */
+    border: 1px solid black;
+    /* padding: 15px; */
+}
+
+.calories {
+    /* display: grid; */
+    grid-area: cal;
+    background: lightblue;
+}
+
+.workVsRset {
+    /* display: grid; */
+    grid-area: wr;
+    background: lightblue;
+}
+
+.main-body {
+    /* display: grid; */
+    grid-area: mb;
+    background: lightgoldenrodyellow;
+}
+
+.main-progress {
+    /* display: grid; */
+    grid-area: mp;
+    background: lightgreen;
+}
+/* .footer {
+   grid-area: f;
+} */

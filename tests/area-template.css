@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-gap: 5px;
+    grid-template-rows: minmax(50px, auto) minmax(150px, auto) minmax(50px, auto);
+    grid-template-rows: 50px 150px 50px;
+    grid-row-gap: 10px; */
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+    "header header header header"
+    "side-nav upper upper upper" 
+    "side-nav main main main" 
+    "side-nav my-progress my-progress my-progress" 
+    "footer footer footer footer"
+
+}
+
+.container>*{
+    background:lightcoral;
+    border: 1px solid black;
+    /* padding: 15px; */
+}
+
+header{
+    grid-area: header;
+
+}
+side-nav{
+    grid-area: side-nav;
+
+}
+upper{
+    grid-area: upper;
+}
+main{
+    grid-area: main;
+}
+
+my-progress{
+    grid-area: my-progress;
+}
+footer{
+    grid-area: footer;
+}
+

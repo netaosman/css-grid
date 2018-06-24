@@ -1,0 +1,50 @@
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "header header header header"
+    "aside aside main main"
+    "nav nav main main"
+    "section section section section"
+    "footer footer footer footer"
+
+}
+
+.container>*{
+    background:lightcoral;
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+
+}
+
+aside{
+    grid-area: aside;
+
+}
+
+nav{
+    grid-area: nav;
+
+}
+
+section{
+    grid-area: section;
+
+}
+
+footer{
+    grid-area: footer;
+
+}
